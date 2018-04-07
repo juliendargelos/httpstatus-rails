@@ -64,7 +64,7 @@ module Httpstatus
     protected
 
     def valid?
-      code.is_a?(Number) && title.is_a?(String) && message.is_a?(String)
+      code.is_a?(Integer) && title.is_a?(String) && message.is_a?(String)
     end
 
     def i18n(property)

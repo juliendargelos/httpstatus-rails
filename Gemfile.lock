@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    httpstatus-rails (0.1.3)
+    httpstatus-rails (0.1.4)
       rails (>= 5.1.6)
 
 GEM

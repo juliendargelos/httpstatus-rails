@@ -120,7 +120,10 @@ end
 ```ruby
 # config/routes.rb
 Rails.application.routes.draw do
-  handles_not_found_status
+
+  # ...
+
+  handles_not_found_status # Put this at the very bottom of the block
 end
 ```
 

@@ -1,0 +1,212 @@
+fr:
+  http_status:
+
+    # 1xx Informational
+    continue:
+      code: 100
+      title: Continuer
+      message: La partie initiale de la requête a bien été reçue et le client peut continuer avec la fin de sa requête.
+    switching_protocols:
+      code: 101
+      title: Changement de protocole
+      message: Le client a demandé au serveur d'utiliser un autre protocole que celui actuellement utilisé, et le serveur accepte cette requête.
+    processing:
+      code: 102
+      title: Traîtement
+      message: Traitement en cours.
+
+    # 2xx Success
+    ok:
+      code: 200
+      title: OK
+      message: Requête traitée avec succès.
+    created:
+      code: 201
+      title: Créé
+      message: La requête a été traitée avec succès et une ou plusieurs resources ont été créées.
+    accepted:
+      code: 202
+      title: Accepté
+      message: La requête a éré traitée, mais le serveur ne garantit pas un résultat.
+    non_authoritative_information:
+      code: 203
+      title: Information non certifiée
+      message: L'information retournée n'a pas été générée par le serveur HTTP mais par une autre source non authentifiée.
+    no_content:
+      code: 204
+      title: Pas de contenu
+      message: Le serveur HTTP a correctement traité la requête mais il n'y a pas d'information à envoyer en retour.
+    reset_content:
+      code: 205
+      title: Contenu réinitialisé
+      message: Le client doit remettre à zéro le formulaire utilisé dans cette transaction.
+    partial_content:
+      code: 206
+      title: Contenu partiel
+      message: Le serveur retourne une partie seulement de la taille demandée.
+    multi_status:
+      code: 207
+      title: Statuts multiples
+      message: Réponse multiple.
+    im_used:
+      code: 226
+      title: IM utilisé
+      message: Le serveur a accompli la requête pour la ressource, et la réponse est une représentation du résultat d'une ou plusieurs manipulations d'instances appliquées à l'instance actuelle.
+
+    # 3xx Redirection
+    multiple_choices:
+      code: 300
+      title: Choix multiples
+      message: L'url demandée concerne plus d'une ressource.
+    moved_permanently:
+      code: 301
+      title: Changement d'adresse définitif
+      message: La ressource demandée possède une nouvelle adresse.
+    found:
+      code: 302
+      title: Changement d'adresse temporaire
+      message: La ressource demandée réside temporairement à une adresse différente.
+    see_other:
+      code: 303
+      title: Voir ailleurs
+      message: L'url spécifiée est disponible à une autre adresse.
+    not_modified:
+      code: 304
+      title: Non modifié
+      message: Le navigateur web a effectué une requête GET conditionnelle et l'accès est autorisé, mais le document n'a pas été modifié.
+    use_proxy:
+      code: 305
+      title: Utiliser le proxy
+      message: L'adresse spécifiée ne peut être atteinte qu'à travers le proxy.
+    temporary_redirect:
+      code: 307
+      title: Redirection temporaire
+      message: La resource spécifiée réside temporairement à une autre adresse.
+
+    # 4xx Client Error
+    bad_request:
+      code: 400
+      title: Mauvaise requête
+      message: La requête HTTP n'a pas pu être comprise par le serveur en raison d'une syntaxe erronée.
+    unauthorized:
+      code: 401
+      title: Non autorisé
+      message: La requête nécessite une identification de l'utilisateur.
+    payment_required:
+      code: 402
+      title: Paiement exigé
+      message: Ce code est réservé pour un usage futur.
+    forbidden:
+      code: 403
+      title: Interdit
+      message: Le serveur HTTP a compris la requête, mais refuse de la traiter.
+    not_found:
+      code: 404
+      title: Page introuvable
+      message: La page que vous recherchez n'existe pas.
+    method_not_allowed:
+      code: 405
+      title: Méthode non autorisée
+      message: La méthode utilisée par le client n'est pas supportée pour cette url.
+    not_acceptable:
+      code: 406
+      title: Aucun disponible
+      message: L'adresse spécifiée existe, mais pas dans le format préféré du client.
+    proxy_authentication_required:
+      code: 407
+      title: Authentification proxy exigée
+      message: Le serveur proxy exige une authentification du client avant de transmettre la requête.
+    request_timeout:
+      code: 408
+      title: La requête a expiré
+      message: Le client n'a pas présenté une requête complète pendant le délai maximal qui lui était imparti, et le serveur a abandonné la connexion.
+    conflict:
+      code: 409
+      title: Conflit
+      message: La requête entre en conflit avec une autre requête ou avec la configuration du serveur.
+    gone:
+      code: 410
+      title: Parti
+      message: L'adresse demandée n'existe plus et a été définitivement supprimée du serveur.
+    length_required:
+      code: 411
+      title: Longueur exigée
+      message: Le serveur a besoin de connaître la taille de cette requête pour pouvoir y répondre.
+    precondition_failed:
+      code: 412
+      title: Précondition échouée
+      message: Les conditions spécifiées dans la requête ne sont pas remplies.
+    payload_too_large:
+      code: 413
+      title: Corps de requête trop grand
+      message: Le serveur ne peut traiter la requête car la taille de son contenu est trop importante.
+    request_uri_too_long:
+      code: 414
+      title: Url trop longue
+      message: Le serveur ne peut traiter la requête car la taille de l'url est trop importante.
+    unsupported_media_type:
+      code: 415
+      title: Format non supporté
+      message: Le serveur ne peut traiter la requête car son contenu est écrit dans un format non supporté.
+    requested_range_not_satisfiable:
+      code: 416
+      title: Plage demandée invalide
+      message: Le sous-ensemble de recherche spécifié est invalide.
+    expectation_failed:
+      code: 417
+      title: Comportement erroné
+      message: Le comportement prévu pour le serveur n'est pas supporté.
+    unprocessable_entity:
+      code: 422
+      title: Impossiblde traîter l'entité
+      message: L’entité fournie avec la requête est incompréhensible ou incomplète.
+    locked:
+      code: 423
+      title: Verouillé
+      message: L’opération ne peut avoir lieu car la ressource est verrouillée.
+    failed_dependency:
+      code: 424
+      title: Échec de la méthode
+      message: Une méthode de la transaction a échoué.
+    upgrade_required:
+      code: 426
+      title: Mise à niveau requise
+      message: Le client devrait changer de protocole.
+
+    # 5xx Server Error
+    internal_server_error:
+      code: 500
+      title: Erreur interne du serveur
+      message: Nous sommes désolé mais quelque chose n'a pas fonctionné...
+    not_implemented:
+      code: 501
+      title: Non implémenté
+      message: Fonctionnalité réclamée non supportée par le serveur.
+    bad_gateway:
+      code: 502
+      title: Mauvaise passerelle
+      message: La passerelle a fourni une réponse invalide.
+    service_unavailable:
+      code: 503
+      title: Service indisponible
+      message: Le serveur HTTP est actuellement incapable de traiter la requête en raison d'une surcharge temporaire ou d'une opération de maintenance.
+    gateway_timeout:
+      code: 504
+      title: Passerelle hors-délai
+      message: La passerrelle n'a pas présenté une réponse complète pendant le délai maximal qui lui était imparti, et le serveur a abandonné la connexion.
+    http_version_not_supported:
+      code: 505
+      title: Version de HTTP non supportée
+      message: La version du protocole HTTP utilisée dans cette requête n'est pas supportée par le serveur.
+    insufficient_storage:
+      code: 507
+      title: Espace insuffisant
+      message: Espace insuffisant pour modifier les propriétés ou construire la collection.
+    loop_detected:
+      code: 508
+      title: Boucle détectée
+      message: Boucle dans une mise en relation de ressources.
+    not_extended:
+      code: 510
+      title: Non étendu
+      message: La requête ne respecte pas la politique d'accès aux ressources HTTP étendues.

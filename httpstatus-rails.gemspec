@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Httpstatus::Rails::VERSION
   s.authors     = ['Julien Dargelos']
   s.email       = ['contact@juliendargelos.com']
-  s.homepage    = 'https://www.github.com/juliendargelos/httpstatus'
+  s.homepage    = 'https://www.github.com/juliendargelos/httpstatus-rails'
   s.summary     = 'Makes http status rendering cool.'
   s.description = 'This gem provides a minimal and customizable rendering content for every status and format included in Rails.'
   s.license     = 'MIT'
